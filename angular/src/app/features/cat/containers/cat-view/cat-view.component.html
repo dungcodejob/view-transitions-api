@@ -1,0 +1,16 @@
+<main class="content">
+  <h1 class="content-title">Some cats</h1>
+  <ul class="gallery">
+    @for (cat of cats(); track cat.name) {
+      <li>
+        <a [routerLink]="[cat.name]">
+          <img
+            [style.viewTransitionName]="viewTransitionName(cat)"
+            [src]="cat.thumb"
+            [alt]="cat.alt" />
+          <span class="gallery-item-title">{{ cat.name | titlecase }}</span>
+        </a>
+      </li>
+    }
+  </ul>
+</main>

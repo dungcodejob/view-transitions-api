@@ -1,0 +1,9 @@
+<main>
+  <div class="banner-img">
+    <img [src]="cat.image" [alt]="cat.alt" width="2340" height="1316" />
+  </div>
+  <div class="content">
+    <h1 class="content-title">{{ cat.name | titlecase }}</h1>
+    <div [innerHTML]="cat.description"></div>
+  </div>
+</main>
