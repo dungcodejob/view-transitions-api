@@ -1,0 +1,14 @@
+<li
+  [routerLink]="link"
+  routerLinkActive="active"
+  class="w-full h-10 px-3 py-2 flex gap-4 items-center cursor-pointer rounded-lg group">
+  <pad-icon
+    width="1.25rem"
+    height="1.25rem"
+    [key]="data.icon ? data.icon : 'folder'"
+    class="stroke-[#626262] group-hover:stroke-black"></pad-icon>
+
+  <p class="text-gray-600 font-medium leading-5 group-hover:text-black">
+    {{ data.title }}
+  </p>
+</li>
